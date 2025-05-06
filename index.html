@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletas Spirit</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="fondoOscuro">
+    <header>
+        <nav>
+            <img src="./imgs/Bicicletas Spirit.png" alt="Logo" class="logo"/>
+            <ul class="cabecera">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#contact">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="home">
+    <div style="width: 100px; height: auto; display: flex; margin-left: auto; margin-right: auto;">
+        <img src="./imgs/bicicletas.png" style="width: 244px; height: 48px; margin-left: -138px; margin-right: 12px;">
+        <img src="./imgs/spirit.png" style="width: 140px; height: 44px; margin-top: 2px;">
+    </div>
+    <h1 style="display: none;">Bicicletas Spirit</h1>
+    <h2 class="h21">Listas para llevarte a donde quieras.</h2>
+    <h2 class="h22">¡Comienza tu aventura hoy mismo y recibe asesoramiento personalizado!</h2>
+    <span>
+        <h4 style="margin: 0px 0px 0px 11px;">Elige un tamaño:</h4>
+        <div class="disponibles">
+                <button class="aro29-bt" onclick="aro29carrusel()">Aro 29</button>
+                <button class="aro27-bt" onclick="aro275carrusel()">Aro 27,5</button>
+                <button class="aro26-bt" onclick="aro26carrusel()">Aro 26</button>
+        </div>
+    </span>
+   <div>
+        <h4><span id="txtaro"></span></h4>
+    </div>
+
+    <div class="carrusel" id="carrusel"></div>
+
+    <div id="modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:wheat; padding:20px; border-radius:10px; z-index:1001; text-align:center;">   
+    </div>
+
+    <br>
+</section>
+<section id="about">
+    <div class="sobre-nosotros">
+        <div class="cuadro-equipo">
+            <div class="logo-nosotros">
+                <a href="#home"><img src="./imgs/Bicicletas Spirit.png" style="width: 120px; margin-top: -116px; "></a>
+            </div>
+            <div class="titulo-nosotros">
+                <img src="./imgs/nuestro.png" style="width: 200px; height: 71px; margin-left: 14px;">
+                <img src="./imgs/equipo.png" style="width: 200px; height: 67px; margin-top: 7px;">
+            </div>
+            <div class="nuestro-equipo">
+                <div>
+                    <img src="./imgs/Marco Almada G.png" class="marco">
+                    <h2 style="text-align: center; color: #87CEEB;">Marco Almada</h2>
+                    <h2 style="text-align: center; color: #87CEEB;">0983 448 780</h2>
+                </div>
+                <div>
+                    <img src="./imgs/Ramon Meza.png" class="ramon">
+                    <h2 style="text-align: center; color: #87CEEB;">Ramon Meza</h2>
+                    <h2 style="text-align: center; color: #87CEEB;">0985 288 213</h2>
+                </div>
+                <div>
+                    <img src="./imgs/ariel almada.png" class="ariel">
+                    <h2 style="text-align: center; color: #87CEEB;">Ariel Almada</h2>
+                    <h2 style="text-align: center; color: #87CEEB;">0982 759 024</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="footer">
+        <h3>Contactanos</h3>
+        <div class="iconos">
+            <a href="https://www.instagram.com/ari2025ia/" style="text-decoration: none;">
+                <img src="./imgs/ig.png" style="height: 48px;">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61575699176029" style="text-decoration: none;">
+                <img src="./imgs/fb.png" >
+            </a>
+            <a href="https://wa.me/595982759024?text=Hola%20%20tengo%20una%20consulta" style="text-decoration: none;">
+                <img src="./imgs/whatsapp.png" style="height: 48px;">
+            </a>
+        </div>
+        <div class="icono-mapa">
+            <h3>Clic en el icono para ver nuestra ubicación en el mapa de google</h3>
+            <a href="https://maps.app.goo.gl/gCdkpNxnKTvehifi8" style="text-decoration: none;">
+                <img src="./imgs/google-maps.png" style="height: 48px;">
+            </a>
+        </div>
+    </div>
+</section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
